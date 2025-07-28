@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <title>Northwest Notary</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand bg-secondary d-flex gap-2 justify-content-between">
+        <a class="navbar-brand p-2 text-bg-secondary" href="#">Northwest Notary</a>
+    </nav>
+    <div class="card border-0">
+        <img class="card-img opacity-25" src="img/pexels-pixabay-356340.jpg" alt="Northwest Notary">
+        <div class="card-body border-0">
+            <div class="card-img-overlay text-center">
+                <h1 class="card-title">Northwest Notary</h1>
+                <h2 class="card-text">Serving Lane County and surrounding areas.</h2>
+                <h3 class="card-text">Available 7 days a week including holidays.</h3>
+                <h3 class="card-text">Evening hours available by appointment.</h3>
+                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapseForm" type="button">Contact Form</button>
+                <div class="collapse container border-3 mt-3" id="collapseForm">
+                    <h4>•As stated below, all signings, in accordance with Oregon law are $10 per signing + Travel fee</h4>
+                    <div class="input-group">
+                        <span class="input-group-text">Your email</span>
+                        <input type="email" class="form-control" id="form-email" placeholder="user@example.com">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text">Describe your inquiry or request</span>
+                        <textarea class="form-control" id="form-note" rows="3"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label for="form-location"></label>
+                        <select name="location" id="form-location" class="form-select">
+                            <option selected>Location</option>
+                            <option value="1">Creswell | Cottage Grove - Travel Fee: $10</option>
+                            <option value="2">Central Eugene | Springfield - Travel Fee: $20</option>
+                            <option value="3">Other (requires quote)</option>
+                        </select>
+                    </div>
+                    <p>• Also as stated below, please note: Travel fees are due within 24 hrs of appointment date.</p>
+                    <p>If same day appointment, travel fee is due immediately.</p>
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-md text-center mt-5">
+        <div class="row align-items-center">
+            <div class="col">Test 1</div>
+            <div class="col">Test 2</div>
+            <div class="col">Test 3</div>
+        </div>
+    </div>
+</body>
+</html>
