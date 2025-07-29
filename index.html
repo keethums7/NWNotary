@@ -20,37 +20,64 @@
                 <h3 class="card-text">Available 7 days a week including holidays.</h3>
                 <h3 class="card-text">Evening hours available by appointment.</h3>
                 <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapseForm" type="button">Contact Form</button>
-                <div class="collapse container border-3 mt-3" id="collapseForm">
-                    <h4>•As stated below, all signings, in accordance with Oregon law are $10 per signing + Travel fee</h4>
-                    <div class="input-group">
-                        <span class="input-group-text">Your email</span>
-                        <input type="email" class="form-control" id="form-email" placeholder="user@example.com">
-                    </div>
-                    <div class="input-group">
-                        <span class="input-group-text">Describe your inquiry or request</span>
-                        <textarea class="form-control" id="form-note" rows="3"></textarea>
-                    </div>
-                    <div class="input-group">
-                        <label for="form-location"></label>
-                        <select name="location" id="form-location" class="form-select">
-                            <option selected>Location</option>
-                            <option value="1">Creswell | Cottage Grove - Travel Fee: $10</option>
-                            <option value="2">Central Eugene | Springfield - Travel Fee: $20</option>
-                            <option value="3">Other (requires quote)</option>
-                        </select>
-                    </div>
-                    <p>• Also as stated below, please note: Travel fees are due within 24 hrs of appointment date.</p>
-                    <p>If same day appointment, travel fee is due immediately.</p>
-                    <button class="btn btn-primary" type="submit">Submit</button>
-                </div>
             </div>
         </div>
     </div>
-    <div class="container-md text-center mt-5">
-        <div class="row align-items-center">
-            <div class="col">Test 1</div>
-            <div class="col">Test 2</div>
-            <div class="col">Test 3</div>
+    <form class="collapse container-fluid" id="collapseForm">
+        <div class="mb-3">
+            <label for="form-name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="form-name" aria-describedby="nameHelp" placeholder="Jane Doe" required>
+        </div>
+        <div class="mb-3">
+            <label for="form-email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="form-email" aria-describedby="emailHelp" placeholder="user@example.com" required>
+        </div>
+        <div class="mb-3">
+            <label for="form-location" class="form-label">Location</label>
+            <select class="form-select" id="form-location" aria-label="Location selection" required>
+                <option selected>Select one:</option>
+                <option value="cg_cw">Cottage Grove | Creswell | $20 Travel Fee</option>
+                <option value="ce_sf">Central Eugene | Springfield | $35 Travel Fee</option>
+                <option value="quote">Other | Quote Required</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="form-note" class="form-description">Description</label>
+            <textarea name="description" id="form-note" cols="30" rows="10" class="form-control" placeholder="Briefly describe the request/inquiry..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <h4>Services Provided</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">Living wills and trusts</li>
+                    <li class="list-group-item">Power of attorney</li>
+                    <li class="list-group-item">Jurats</li>
+                    <li class="list-group-item">Acknowledgement</li>
+                    <li class="list-group-item">Certified copies</li>
+                    <li class="list-group-item">Other general Notary acts</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Time and Fees</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">All signings, in accordance with Oregon law, are $10 per signing plus travel fee</li>
+                    <li class="list-group-item">For Cottage Grove & Creswell areas, travel fee is $20</li>
+                    <li class="list-group-item">For central Eugene & Springfield areas, travel fee is $35</li>
+                    <li class="list-group-item">Areas outside of those listed above require a quote to calculate travel fee</li>
+                    <li class="list-group-item">Please note: Travel fees are due within 24 hours of appointment date. If same day appointment, travel fee is due immediately.</li>
+                </ul>
+            </div>
+            <div class="col">
+               <h4>Miscellaneous Fees</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">Signer refuses to sign - travel fee is still required</li>
+                    <li class="list-group-item">Signer does not have required government ID - travel fee is still required</li>
+                    <li class="list-group-item">Wait times - An additional $10 is charged for every 15 minutes after scheduled appointment time</li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
