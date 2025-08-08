@@ -8,46 +8,45 @@
     <title>Northwest Notary</title>
 </head>
 <body class="bg-secondary-subtle">
-    <nav class="navbar navbar-expand bg-secondary d-flex gap-2 justify-content-between">
-        <a class="navbar-brand p-2 text-bg-secondary" href="#">Northwest Notary</a>
+    <nav class="navbar navbar-expand bg-primary d-flex gap-2 justify-content-center">
+        <h1 class="text-bg-primary">Northwest Notary</h1>
     </nav>
-    <div class="card border-0 bg-secondary-subtle">
+    <div class="card border border-0 bg-secondary-subtle">
         <img class="card-img opacity-25" src="img/pexels-pixabay-356340.jpg" alt="Northwest Notary">
         <div class="card-body border-0">
             <div class="card-img-overlay text-center">
-                <h1 class="card-title">Northwest Notary</h1>
-                <h2 class="card-text">Serving Lane County and surrounding areas.</h2>
-                <h3 class="card-text">Available 7 days a week including holidays.</h3>
-                <h3 class="card-text">Evening hours available by appointment.</h3>
-                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapseForm" type="button">Contact Form</button>
+                <h3 class="card-text">Serving Lane County and surrounding areas.</h3>
+                <h4 class="card-text">Available 7 days a week including holidays.</h4>
+                <h4 class="card-text">Evening hours I'm good, my coworkers pointed out I available by appointment.</h4>
+                <button class="btn btn-primary " data-bs-toggle="collapse" data-bs-target="#collapseForm" type="button">Contact Form</button>
             </div>
+            <form class="collapse container-fluid card-image-overlay" id="collapseForm">
+                <div class="mb-3">
+                    <label for="form-name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="form-name" aria-describedby="nameHelp" placeholder="Jane Doe" required>
+                </div>
+                <div class="mb-3">
+                    <label for="form-email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="form-email" aria-describedby="emailHelp" placeholder="user@example.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="form-location" class="form-label">Location</label>
+                    <select class="form-select" id="form-location" aria-label="Location selection" required>
+                        <option selected>Select one:</option>
+                        <option value="cg_cw">Cottage Grove | Creswell | $20 Travel Fee</option>
+                        <option value="ce_sf">Central Eugene | Springfield | $35 Travel Fee</option>
+                        <option value="quote">Other | Quote Required</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="form-note" class="form-description">Description</label>
+                    <textarea name="description" id="form-note" cols="30" rows="10" class="form-control" placeholder="Briefly describe the request/inquiry..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
     </div>
-    <form class="collapse container-fluid" id="collapseForm">
-        <div class="mb-3">
-            <label for="form-name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="form-name" aria-describedby="nameHelp" placeholder="Jane Doe" required>
-        </div>
-        <div class="mb-3">
-            <label for="form-email" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="form-email" aria-describedby="emailHelp" placeholder="user@example.com" required>
-        </div>
-        <div class="mb-3">
-            <label for="form-location" class="form-label">Location</label>
-            <select class="form-select" id="form-location" aria-label="Location selection" required>
-                <option selected>Select one:</option>
-                <option value="cg_cw">Cottage Grove | Creswell | $20 Travel Fee</option>
-                <option value="ce_sf">Central Eugene | Springfield | $35 Travel Fee</option>
-                <option value="quote">Other | Quote Required</option>
-            </select>
-        </div>
-        <div class="mb-3">
-            <label for="form-note" class="form-description">Description</label>
-            <textarea name="description" id="form-note" cols="30" rows="10" class="form-control" placeholder="Briefly describe the request/inquiry..." required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-    <div class="container text-center bg-success-subtle text-success-subtle p-3">
+    <div class="container text-center bg-success-subtle rounded text-success-subtle p-5">
         <div class="row">
             <div class="col">
                 <h4>Services Provided</h4>
@@ -80,6 +79,5 @@
             </div>
         </div>
     </div>
-<div class="container-fluid bg-secondary"></div>
 </body>
 </html>
